@@ -9,7 +9,7 @@ const globalErrorHandler = require('./helpers/error-handler');
 
 // socket.io connection
 const io = require('socket.io')(server, {
-  cors: 'http://localhost:3000',
+  cors: process.env.CORS_URL,
 });
 
 // cor
