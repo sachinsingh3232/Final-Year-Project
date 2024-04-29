@@ -131,7 +131,7 @@ function Prediction() {
       // alert("Please Wait!")
       setWait(true)
       setResp([]);
-      const response = await axios.post(`http://localhost:8000/receive_data`, {
+      const response = await axios.post(`https://vaidya-5uhq.onrender.com/receive_data`, {
         name: state?.data?.name ? state?.data?.name : "PatientName",
         sym1,
         sym2,
